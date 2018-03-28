@@ -2,23 +2,10 @@ module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 8,
-    ecmaFeatures: {
-      jsx: true
-    }
+    ecmaVersion: 9,
+    ecmaFeatures: {jsx: true}
   },
-  plugins: [
-    'react'
-  ],
-  env: {
-    amd: true,
-    browser: true,
-    es6: true,
-    mocha: true,
-    node: true,
-    phantomjs: true,
-    worker: true
-  },
+  plugins: ['react'],
   rules: {
     'comma-dangle': [2, 'never'],
     'no-comma-dangle': 0,
