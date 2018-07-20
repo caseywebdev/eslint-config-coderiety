@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coderiety",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Casey Foster <c@sey.me>",
   "description": "ESLint configuration used by Coderiety projects.",
   "license": "MIT",
@@ -9,8 +9,8 @@
     "url": "https://github.com/coderiety/eslint-config-coderiety"
   },
   "peerDependencies": {
-    "babel-eslint": "8",
-    "eslint-plugin-react": "7",
-    "eslint": "4"
+    "babel-eslint": "x",
+    "eslint-plugin-react": "x",
+    "eslint": "x"
   }
 }
