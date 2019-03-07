@@ -8,6 +8,7 @@ module.exports = {
   },
   env: { browser: true, es6: true, jest: true, node: true },
   rules: {
+    "prettier/prettier": ["error", { jsxSingleQuote: true, singleQuote: true }],
     "consistent-return": "off",
     "default-case": "off",
     "global-require": "off",
