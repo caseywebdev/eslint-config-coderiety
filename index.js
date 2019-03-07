@@ -6,7 +6,6 @@ module.exports = {
     ecmaVersion: 9,
     ecmaFeatures: { jsx: true }
   },
-  env: { browser: true, es6: true, jest: true, node: true },
   rules: {
     'consistent-return': 'off',
     'default-case': 'off',
