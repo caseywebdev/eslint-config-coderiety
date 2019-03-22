@@ -13,7 +13,7 @@ module.exports = {
     'guard-for-in': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
-    'import/order': ['error', { 'newlines-between': 'always' }],
+    'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
     'jsx-a11y/accessible-emoji': 'off',
     'jsx-a11y/alt-text': 'off',
     'no-await-in-loop': 'off',
