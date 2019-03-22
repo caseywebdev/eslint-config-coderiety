@@ -18,6 +18,7 @@ module.exports = {
     'jsx-a11y/alt-text': 'off',
     'no-await-in-loop': 'off',
     'no-bitwise': 'off',
+    'no-continue': 'off',
     'no-empty': 'off',
     'no-multi-assign': 'off',
     'no-param-reassign': 'off',
