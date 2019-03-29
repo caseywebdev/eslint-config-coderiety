@@ -34,6 +34,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 'off',
     'react/no-array-index-key': 'off',
     'react/prop-types': 'off',
+    'require-await': 'error',
     'sort-imports': ['error', { ignoreDeclarationSort: true }],
     curly: ['error', 'multi-line'],
     radix: 'off'
