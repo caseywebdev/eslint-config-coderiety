@@ -12,6 +12,7 @@ module.exports = {
     'global-require': 'off',
     'guard-for-in': 'off',
     'import/extensions': 'off',
+    'import/no-cycle': 'off',
     'import/no-unresolved': 'off',
     'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
     'jsx-a11y/accessible-emoji': 'off',
