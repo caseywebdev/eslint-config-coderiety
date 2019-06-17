@@ -31,7 +31,11 @@ module.exports = {
     'no-use-before-define': 'off',
     'prefer-const': ['error', { destructuring: 'all' }],
     'prefer-destructuring': 'off',
-    'prettier/prettier': ['error', { jsxSingleQuote: true, singleQuote: true }],
+    'prettier/prettier': [
+      'error',
+      { jsxSingleQuote: true, singleQuote: true },
+      { fileInfoOptions: { withNodeModules: true } }
+    ],
     'react/jsx-filename-extension': 'off',
     'react/jsx-one-expression-per-line': 'off',
     'react/no-array-index-key': 'off',
