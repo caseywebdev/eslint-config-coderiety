@@ -13,6 +13,7 @@ module.exports = {
     'guard-for-in': 'off',
     'import/extensions': 'off',
     'import/no-cycle': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'import/no-unresolved': 'off',
     'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
     'jsx-a11y/accessible-emoji': 'off',
