@@ -18,6 +18,7 @@ module.exports = {
     'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
     'jsx-a11y/accessible-emoji': 'off',
     'jsx-a11y/alt-text': 'off',
+    'jsx-a11y/label-has-for': 'off',
     'no-await-in-loop': 'off',
     'no-bitwise': 'off',
     'no-continue': 'off',
