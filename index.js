@@ -1,50 +1,37 @@
 module.exports = {
-  extends: ['airbnb', 'plugin:prettier/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:import/recommended',
+    'plugin:prettier/recommended'
+  ],
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 9,
-    ecmaFeatures: { jsx: true }
+    ecmaVersion: 2019,
+    ecmaFeatures: {
+      jsx: true
+    }
   },
+  plugins: ['import', 'prettier', 'react', 'react-hooks'],
   rules: {
-    'consistent-return': 'off',
-    'default-case': 'off',
-    'global-require': 'off',
-    'guard-for-in': 'off',
-    'import/extensions': 'off',
-    'import/no-cycle': 'off',
-    'import/no-extraneous-dependencies': 'off',
+    'import/no-named-export': 'error',
     'import/no-unresolved': 'off',
     'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
-    'jsx-a11y/accessible-emoji': 'off',
-    'jsx-a11y/alt-text': 'off',
-    'jsx-a11y/label-has-for': 'off',
-    'no-await-in-loop': 'off',
-    'no-bitwise': 'off',
-    'no-continue': 'off',
-    'no-empty': 'off',
-    'no-multi-assign': 'off',
-    'no-nested-ternary': 'off',
-    'no-param-reassign': 'off',
-    'no-plusplus': 'off',
-    'no-restricted-syntax': 'off',
-    'no-return-assign': 'off',
-    'no-shadow': 'off',
-    'no-use-before-define': 'off',
     'prefer-const': ['error', { destructuring: 'all' }],
-    'prefer-destructuring': 'off',
     'prettier/prettier': [
       'error',
       { jsxSingleQuote: true, singleQuote: true },
       { fileInfoOptions: { withNodeModules: true } }
     ],
-    'react/jsx-filename-extension': 'off',
-    'react/jsx-one-expression-per-line': 'off',
-    'react/no-array-index-key': 'off',
+    'react-hooks/exhaustive-deps': 'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react/display-name': 'off',
     'react/prop-types': 'off',
+    'require-atomic-updates': 'off',
     'require-await': 'error',
     'sort-imports': ['error', { ignoreDeclarationSort: true }],
-    curly: ['error', 'multi-line'],
-    radix: 'off'
-  }
+    curly: ['error', 'multi-line']
+  },
+  settings: { react: { version: 'latest' } }
 };
