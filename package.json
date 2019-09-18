@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coderiety",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "author": "Casey Foster <c@sey.me>",
   "description": "ESLint configuration used by Coderiety projects.",
   "license": "MIT",
@@ -16,6 +16,6 @@
     "eslint-plugin-react-hooks": "2",
     "eslint-plugin-react": "7",
     "eslint": "6",
-    "prettier": "x"
+    "prettier": "1"
   }
 }
