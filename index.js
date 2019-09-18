@@ -30,7 +30,7 @@ module.exports = {
     'react/prop-types': 'off',
     'require-atomic-updates': 'off',
     'require-await': 'error',
-    'sort-imports': ['error', { ignoreDeclarationSort: true }],
+    'sort-imports': ['error', { ignoreCase: false }],
     curly: ['error', 'multi-line']
   },
   settings: { react: { version: 'latest' } }
