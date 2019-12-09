@@ -17,7 +17,10 @@ module.exports = {
   rules: {
     'import/no-named-export': 'error',
     'import/no-unresolved': 'off',
-    'import/order': ['error', { groups: [], 'newlines-between': 'never' }],
+    'import/order': [
+      'error',
+      { alphabetize: { order: 'asc' }, groups: [], 'newlines-between': 'never' }
+    ],
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
       'error',
