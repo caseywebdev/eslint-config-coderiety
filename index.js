@@ -20,7 +20,7 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/order': [
       'error',
-      { alphabetize: { order: 'asc' }, groups: [], 'newlines-between': 'never' }
+      { alphabetize: { order: 'asc' }, 'newlines-between': 'always' }
     ],
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
@@ -37,5 +37,8 @@ module.exports = {
     'sort-imports': ['error', { ignoreDeclarationSort: true }],
     curly: ['error', 'multi-line']
   },
-  settings: { react: { version: 'latest' } }
+  settings: {
+    'import/internal-regex': '^src/',
+    react: { version: 'latest' }
+  }
 };
