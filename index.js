@@ -15,6 +15,7 @@ module.exports = {
   },
   plugins: ['import', 'prettier', 'react', 'react-hooks'],
   rules: {
+    'import/newline-after-import': 'error',
     'import/no-named-export': 'error',
     'import/no-unresolved': 'off',
     'import/order': [
