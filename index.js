@@ -20,7 +20,7 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/order': [
       'error',
-      { alphabetize: { order: 'asc' }, 'newlines-between': 'always' }
+      { /* alphabetize: { order: 'asc' } */, 'newlines-between': 'always' }
     ],
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
