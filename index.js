@@ -22,6 +22,7 @@ module.exports = {
       'error',
       { alphabetize: { order: 'asc' }, 'newlines-between': 'always' }
     ],
+    'no-constant-condition': ['error', { checkLoops: false }],
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
       'error',
