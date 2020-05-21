@@ -9,13 +9,7 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
     ecmaVersion: 2020,
-    ecmaFeatures: { jsx: true },
-    babelConfig: {
-      caller: {
-        name: 'eslint-config-coderiety',
-        supportsTopLevelAwait: true
-      }
-    }
+    ecmaFeatures: { jsx: true }
   },
   plugins: ['import', 'prettier', 'react', 'react-hooks'],
   rules: {
