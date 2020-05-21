@@ -8,9 +8,12 @@ module.exports = {
   parser: 'babel-eslint',
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 2019,
+    ecmaVersion: 2020,
     ecmaFeatures: {
       jsx: true
+    },
+    babelOptions: {
+      plugins: ['@babel/plugin-syntax-top-level-await']
     }
   },
   plugins: ['import', 'prettier', 'react', 'react-hooks'],
@@ -26,7 +29,12 @@ module.exports = {
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
       'error',
-      { jsxSingleQuote: true, singleQuote: true },
+      {
+        arrowParens: 'avoid',
+        jsxSingleQuote: true,
+        singleQuote: true,
+        trailingComma: 'none'
+      },
       { fileInfoOptions: { withNodeModules: true } }
     ],
     'react-hooks/exhaustive-deps': 'error',
