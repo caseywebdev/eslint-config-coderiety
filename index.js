@@ -37,7 +37,6 @@ module.exports = {
     'react/display-name': 'off',
     'react/prop-types': 'off',
     'require-atomic-updates': 'off',
-    'require-await': 'error',
     'sort-imports': ['error', { ignoreDeclarationSort: true }],
     curly: ['error', 'multi-line']
   },
