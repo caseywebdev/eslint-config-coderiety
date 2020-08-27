@@ -20,6 +20,7 @@ module.exports = {
       'error',
       { alphabetize: { order: 'asc' }, 'newlines-between': 'always' }
     ],
+    'no-async-promise-executor': 'off',
     'no-constant-condition': ['error', { checkLoops: false }],
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
