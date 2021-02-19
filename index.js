@@ -5,11 +5,12 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:prettier/recommended'
   ],
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    sourceType: 'module',
-    ecmaVersion: 2020,
-    ecmaFeatures: { jsx: true }
+    ecmaFeatures: { jsx: true },
+    ecmaVersion: 2021,
+    requireConfigFile: false,
+    sourceType: 'module'
   },
   plugins: ['import', 'prettier', 'react', 'react-hooks'],
   rules: {
