@@ -3,4 +3,6 @@ const foo = async () => {
   return bar;
 };
 
+<div />;
+
 foo();
