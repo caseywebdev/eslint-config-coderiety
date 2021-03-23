@@ -35,6 +35,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'error',
     'react-hooks/rules-of-hooks': 'error',
     'react/display-name': 'off',
+    'react/jsx-uses-react': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
     'require-atomic-updates': 'off',

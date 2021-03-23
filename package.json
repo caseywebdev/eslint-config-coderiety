@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coderiety",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "author": "Casey Foster <c@sey.me>",
   "description": "ESLint configuration used by Coderiety projects.",
   "license": "MIT",
