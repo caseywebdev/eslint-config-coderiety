@@ -40,7 +40,8 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'require-atomic-updates': 'off',
     'sort-imports': ['error', { ignoreDeclarationSort: true }],
-    curly: ['error', 'multi-line']
+    curly: ['error', 'multi-line'],
+    eqeqeq: ['error', 'always', { null: 'ignore' }]
   },
   settings: {
     'import/internal-regex': '^src/',
