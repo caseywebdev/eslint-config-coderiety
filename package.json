@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coderiety",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "author": "Casey Foster <c@sey.me>",
   "description": "ESLint configuration used by Coderiety projects.",
   "license": "MIT",
@@ -9,6 +9,9 @@
     "url": "https://github.com/coderiety/eslint-config-coderiety"
   },
   "dependencies": {
+    "@babel/eslint-parser": "7",
+    "@babel/plugin-syntax-top-level-await": "7",
+    "@babel/preset-react": "7",
     "eslint-config-prettier": "8",
     "eslint-plugin-import": "2",
     "eslint-plugin-prettier": "3",
