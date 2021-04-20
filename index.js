@@ -11,7 +11,7 @@ module.exports = {
     requireConfigFile: false,
     babelOptions: {
       plugins: ['@babel/plugin-syntax-top-level-await'],
-      presets: ["@babel/preset-react"]
+      presets: ['@babel/preset-react']
     }
   },
   // TODO: Use when top-level-await is supported in eslint default parser.
