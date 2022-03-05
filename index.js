@@ -55,6 +55,6 @@ module.exports = {
   },
   settings: {
     'import/internal-regex': '^src/',
-    react: { version: 'latest' }
+    react: { version: '17' }
   }
 };
