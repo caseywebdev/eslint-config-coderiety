@@ -8,3 +8,5 @@ await foo();
 <div />;
 
 foo();
+
+globalThis.Promise;

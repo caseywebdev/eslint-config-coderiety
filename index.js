@@ -5,21 +5,11 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:prettier/recommended'
   ],
-  parser: '@babel/eslint-parser',
   parserOptions: {
-    sourceType: 'module',
-    requireConfigFile: false,
-    babelOptions: {
-      plugins: ['@babel/plugin-syntax-top-level-await'],
-      presets: ['@babel/preset-react']
-    }
+    ecmaFeatures: { jsx: true },
+    ecmaVersion: 2022,
+    sourceType: 'module'
   },
-  // TODO: Use when top-level-await is supported in eslint default parser.
-  // parserOptions: {
-  //   ecmaFeatures: { jsx: true },
-  //   ecmaVersion: 2021,
-  //   sourceType: 'module'
-  // },
   plugins: ['import', 'prettier', 'react', 'react-hooks'],
   rules: {
     'import/newline-after-import': 'error',
@@ -56,5 +46,6 @@ module.exports = {
   settings: {
     'import/internal-regex': '^src/',
     react: { version: '17' }
-  }
+  },
+  globals: { globalThis: 'readonly' }
 };
