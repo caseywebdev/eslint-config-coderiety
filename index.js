@@ -17,7 +17,11 @@ module.exports = {
     'import/no-unresolved': 'off',
     'import/order': [
       'error',
-      { alphabetize: { order: 'asc' }, 'newlines-between': 'always' }
+      {
+        'newlines-between': 'always',
+        alphabetize: { order: 'asc' },
+        groups: ['builtin', 'external', 'internal', 'sibling']
+      }
     ],
     'no-async-promise-executor': 'off',
     'no-constant-condition': ['error', { checkLoops: false }],
