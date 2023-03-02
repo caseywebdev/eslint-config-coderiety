@@ -1,7 +1,6 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:import/recommended',
     'plugin:prettier/recommended'
@@ -12,7 +11,7 @@ module.exports = {
     ecmaVersion: 2022,
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks'],
+  plugins: ['import', 'prettier', 'react', 'react-hooks'],
   rules: {
     'import/newline-after-import': 'error',
     'import/no-named-export': 'error',
