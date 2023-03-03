@@ -11,8 +11,9 @@ module.exports = {
     ecmaVersion: 2022,
     sourceType: 'module'
   },
-  plugins: ['import', 'prettier', 'react', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks'],
   rules: {
+    '@typescript-eslint/no-unused-vars': 'error',
     'import/newline-after-import': 'error',
     'import/no-named-export': 'error',
     'import/no-unresolved': 'off',
@@ -26,6 +27,7 @@ module.exports = {
     ],
     'no-async-promise-executor': 'off',
     'no-constant-condition': ['error', { checkLoops: false }],
+    'no-unused-vars': 'off',
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
       'error',
