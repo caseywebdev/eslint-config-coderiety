@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks'],
   rules: {
+    '@typescript-eslint/no-undef': 'error',
     '@typescript-eslint/no-unused-vars': 'error',
     'import/newline-after-import': 'error',
     'import/no-named-export': 'error',
@@ -27,6 +28,7 @@ module.exports = {
     ],
     'no-async-promise-executor': 'off',
     'no-constant-condition': ['error', { checkLoops: false }],
+    'no-undef': 'off',
     'no-unused-vars': 'off',
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
