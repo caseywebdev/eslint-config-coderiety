@@ -5,16 +5,13 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:prettier/recommended'
   ],
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 2022,
     sourceType: 'module'
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier', 'react', 'react-hooks'],
+  plugins: ['import', 'prettier', 'react', 'react-hooks'],
   rules: {
-    '@typescript-eslint/no-undef': 'error',
-    '@typescript-eslint/no-unused-vars': 'error',
     'import/newline-after-import': 'error',
     'import/no-named-export': 'error',
     'import/no-unresolved': 'off',
@@ -28,8 +25,6 @@ module.exports = {
     ],
     'no-async-promise-executor': 'off',
     'no-constant-condition': ['error', { checkLoops: false }],
-    'no-undef': 'off',
-    'no-unused-vars': 'off',
     'prefer-const': ['error', { destructuring: 'all' }],
     'prettier/prettier': [
       'error',
@@ -52,9 +47,20 @@ module.exports = {
     curly: ['error', 'multi-line'],
     eqeqeq: ['error', 'always', { null: 'ignore' }]
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      extends: 'plugin:@typescript-eslint/recommended',
+      plugins: ['@typescript-eslint'],
+      rules: {
+        '@typescript-eslint/no-explicit-any': 'off'
+      }
+    }
+  ],
   settings: {
     'import/internal-regex': '^src/',
-    react: { version: '17' }
+    react: { version: '18' }
   },
   globals: { globalThis: 'readonly' }
 };
