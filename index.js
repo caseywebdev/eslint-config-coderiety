@@ -31,6 +31,7 @@ module.exports = {
       {
         arrowParens: 'avoid',
         jsxSingleQuote: true,
+        plugins: ['prettier-plugin-jsdoc'],
         singleQuote: true,
         trailingComma: 'none'
       },

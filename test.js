@@ -7,16 +7,17 @@ import d from 'src/d.js';
 
 import e from './e.js';
 
-const foo = async () => {
-  const bar = 1;
+/** @param {number} a */
+const plusOne = async a => {
+  const bar = a + 1;
   return bar;
 };
 
-await foo();
+await plusOne(1);
 
 <div />;
 
-foo();
+plusOne(2);
 
 globalThis.Promise;
 
