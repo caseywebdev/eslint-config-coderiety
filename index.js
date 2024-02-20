@@ -63,9 +63,6 @@ module.exports = {
       ]
     }
   ],
-  settings: {
-    'import/internal-regex': '^src/',
-    react: { version: '18' }
-  },
+  settings: { react: { version: '18' } },
   globals: { globalThis: 'readonly' }
 };
