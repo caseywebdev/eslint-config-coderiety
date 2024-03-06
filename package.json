@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-coderiety",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "author": "Casey Foster <c@sey.me>",
   "description": "ESLint configuration used by Coderiety projects.",
   "license": "MIT",
@@ -9,8 +9,8 @@
     "url": "https://github.com/coderiety/eslint-config-coderiety"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "6",
-    "@typescript-eslint/parser": "6",
+    "@typescript-eslint/eslint-plugin": "7",
+    "@typescript-eslint/parser": "7",
     "eslint-config-prettier": "9",
     "eslint-plugin-import": "2",
     "eslint-plugin-prettier": "5",
