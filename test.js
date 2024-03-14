@@ -18,6 +18,6 @@ await plusOne(1);
 
 plusOne(2);
 
-globalThis.Promise;
+Promise;
 
 globalThis.console.log(a, b, c, d, e);

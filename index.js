@@ -5,9 +5,10 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:prettier/recommended'
   ],
+  env: { es2024: true },
   parserOptions: {
     ecmaFeatures: { jsx: true },
-    ecmaVersion: 2022,
+    ecmaVersion: 2024,
     sourceType: 'module'
   },
   plugins: ['import', 'prettier', 'react', 'react-hooks'],
