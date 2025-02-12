@@ -3,6 +3,7 @@
 import js from '@eslint/js';
 import _import from 'eslint-plugin-import';
 import prettier from 'eslint-plugin-prettier/recommended';
+import react from 'eslint-plugin-react';
 import typescript from 'typescript-eslint';
 
 /** @type {Linter.Config[]} */
@@ -17,6 +18,7 @@ export default [
       parserOptions: { ecmaFeatures: { jsx: true } },
       sourceType: 'module'
     },
+    plugins: { react },
     rules: {
       'import/newline-after-import': 'error',
       'import/no-unresolved': 'off',
@@ -28,6 +30,7 @@ export default [
           groups: ['builtin', 'external', 'internal', 'sibling']
         }
       ],
+      'jsx/jsx-uses-vars': 'error',
       'no-async-promise-executor': 'off',
       'no-constant-condition': ['error', { checkLoops: false }],
       'prefer-const': ['error', { destructuring: 'all' }],

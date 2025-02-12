@@ -3,6 +3,7 @@ import a from 'node:crypto';
 import b from 'c';
 import c from 'shared/c.js';
 import d from 'src/d.js';
+import Test from 'src/test.js';
 
 import e from './e.js';
 
@@ -15,6 +16,8 @@ const plusOne = async a => {
 await plusOne(1);
 
 <div />;
+
+<Test />;
 
 plusOne(2);
 
