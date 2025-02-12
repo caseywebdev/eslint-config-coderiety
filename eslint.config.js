@@ -1,9 +1,9 @@
-import react from 'eslint-plugin-react';
-import prettier from 'eslint-plugin-prettier'
-import prettierConfig from 'eslint-config-prettier';
-import reactHooks from 'eslint-plugin-react-hooks';
 import js from '@eslint/js';
+import prettierConfig from 'eslint-config-prettier';
 import _import from 'eslint-plugin-import';
+import prettier from 'eslint-plugin-prettier';
+import react from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
 import typescript from 'typescript-eslint';
 
 export default [
@@ -18,10 +18,7 @@ export default [
       globals: { globalThis: 'readonly' },
       sourceType: 'module'
     },
-    plugins: {
-      prettier,
-      'react-hooks': reactHooks
-    },
+    plugins: { prettier, 'react-hooks': reactHooks },
     rules: {
       'import/newline-after-import': 'error',
       'import/no-named-export': 'error',
@@ -62,9 +59,9 @@ export default [
       eqeqeq: ['error', 'always', { null: 'ignore' }]
     }
   },
-  ...typescript.configs.recommended.map((config) => ({
+  ...typescript.configs.recommended.map(config => ({
     ...config,
-    files: ['*.ts', '*.tsx','*.d.ts'],
+    files: ['*.ts', '*.tsx', '*.d.ts']
   })),
   {
     files: ['*.ts', '*.tsx'],
@@ -73,8 +70,5 @@ export default [
       '@typescript-eslint/no-unused-vars': 'off'
     }
   },
-  {
-    files: ['*.d.ts'],
-    rules: { 'import/no-named-export': 'off' }
-  }
-]
+  { files: ['*.d.ts'], rules: { 'import/no-named-export': 'off' } }
+];
