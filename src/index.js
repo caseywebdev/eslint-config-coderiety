@@ -23,7 +23,6 @@ export default [
     settings: { react: { version: '19' } },
     rules: {
       'import/newline-after-import': 'error',
-      'import/no-named-export': 'error',
       'import/no-unresolved': 'off',
       'import/order': [
         'error',
