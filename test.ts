@@ -9,6 +9,4 @@ await foo();
 
 foo();
 
-globalThis.Promise;
-
 globalThis.console.log(a);

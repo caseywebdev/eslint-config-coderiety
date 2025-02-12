@@ -1,27 +1,24 @@
 {
   "name": "eslint-config-coderiety",
-  "version": "2.6.4",
+  "version": "2.6.5",
   "author": "Casey Foster <c@sey.me>",
   "description": "ESLint configuration used by Coderiety projects.",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/coderiety/eslint-config-coderiety"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "7",
-    "@typescript-eslint/parser": "7",
-    "eslint-config-prettier": "9",
+    "@eslint/js": "9",
+    "eslint-config-prettier": "10",
     "eslint-plugin-import": "2",
     "eslint-plugin-prettier": "5",
-    "eslint-plugin-react-hooks": "4",
+    "eslint-plugin-react-hooks": "5",
     "eslint-plugin-react": "7",
-    "eslint": "8",
+    "eslint": "9",
     "prettier-plugin-jsdoc": "1",
-    "prettier": "3"
-  },
-  "eslintConfig": {
-    "root": true,
-    "extends": "./index.js"
+    "prettier": "3",
+    "typescript-eslint": "8"
   }
 }
