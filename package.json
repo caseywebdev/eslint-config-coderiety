@@ -5,17 +5,21 @@
   "description": "ESLint configuration used by Coderiety projects.",
   "license": "MIT",
   "type": "module",
-  "main": "eslint.config.js",
+  "exports": {
+    ".": {
+      "types": "./types/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/coderiety/eslint-config-coderiety"
   },
   "dependencies": {
     "@eslint/js": "9",
-    "eslint-config-prettier": "10",
     "eslint-plugin-import": "2",
     "eslint-plugin-prettier": "5",
-    "eslint-plugin-react-hooks": "5",
+    "eslint-plugin-react-hooks": "5.2.0-canary-cd90a4d8-20250210",
     "eslint-plugin-react": "7",
     "eslint": "9",
     "prettier-plugin-jsdoc": "1",
