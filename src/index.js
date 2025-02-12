@@ -13,10 +13,9 @@ export default [
   prettier,
   {
     languageOptions: {
-      ecmaVersion: 2025,
+      ecmaVersion: 'latest',
       globals: { globalThis: 'readonly' },
-      parserOptions: { ecmaFeatures: { jsx: true } },
-      sourceType: 'module'
+      parserOptions: { ecmaFeatures: { jsx: true } }
     },
     plugins: { react },
     rules: {
@@ -30,7 +29,6 @@ export default [
           groups: ['builtin', 'external', 'internal', 'sibling']
         }
       ],
-      'jsx/jsx-uses-vars': 'error',
       'no-async-promise-executor': 'off',
       'no-constant-condition': ['error', { checkLoops: false }],
       'prefer-const': ['error', { destructuring: 'all' }],
@@ -46,6 +44,9 @@ export default [
         },
         { fileInfoOptions: { withNodeModules: true } }
       ],
+      'react/jsx-key': 'error',
+      'react/jsx-no-undef': 'error',
+      'react/jsx-uses-vars': 'error',
       'require-atomic-updates': 'off',
       'sort-imports': ['error', { ignoreDeclarationSort: true }],
       curly: ['error', 'multi-line'],

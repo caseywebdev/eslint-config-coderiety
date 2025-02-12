@@ -17,7 +17,7 @@ await plusOne(1);
 
 <div />;
 
-<Test />;
+[1, 2, 3].map(n => <Test foo={123} key={n} />);
 
 plusOne(2);
 
