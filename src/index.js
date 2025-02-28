@@ -1,7 +1,7 @@
 /** @import {Linter} from 'eslint' */
 
 import js from '@eslint/js';
-import _import from 'eslint-plugin-import';
+import importPlugin from 'eslint-plugin-import';
 import prettier from 'eslint-plugin-prettier/recommended';
 import react from 'eslint-plugin-react';
 import typescript from 'typescript-eslint';
@@ -9,7 +9,8 @@ import typescript from 'typescript-eslint';
 /** @type {Linter.Config[]} */
 export default [
   js.configs.recommended,
-  _import.flatConfigs.recommended,
+  ...typescript.configs.recommended,
+  importPlugin.flatConfigs.recommended,
   prettier,
   {
     languageOptions: {
@@ -19,6 +20,7 @@ export default [
     },
     plugins: { react },
     rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
       'import/newline-after-import': 'error',
       'import/no-unresolved': 'off',
       'import/order': [
@@ -52,17 +54,5 @@ export default [
       curly: ['error', 'multi-line'],
       eqeqeq: ['error', 'always', { null: 'ignore' }]
     }
-  },
-  ...typescript.configs.recommended.map(config => ({
-    ...config,
-    files: ['*.ts', '*.tsx', '*.d.ts']
-  })),
-  {
-    files: ['*.ts', '*.tsx'],
-    rules: {
-      '@typescript-eslint/no-explicit-any': 'off',
-      '@typescript-eslint/no-unused-vars': 'off'
-    }
-  },
-  { files: ['*.d.ts'], rules: { 'import/no-named-export': 'off' } }
+  }
 ];

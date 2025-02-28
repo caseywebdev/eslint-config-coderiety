@@ -21,6 +21,4 @@ await plusOne(1);
 
 plusOne(2);
 
-Promise;
-
 globalThis.console.log(a, b, c, d, e);

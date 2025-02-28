@@ -1,6 +1,12 @@
 import a from 'node:crypto';
 
-const foo = async (): Promise<number> => {
+type Bar = (a: number) => string;
+
+const bar: Bar = a => a.toString();
+
+bar(1);
+
+const foo = async () => {
   const bar = 1;
   return bar;
 };

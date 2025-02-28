@@ -1,8 +1,8 @@
 import a from 'node:crypto';
 
-type Bar = (a: any) => any;
+type Bar = (a: number) => string;
 
-const bar: Bar = a => a;
+const bar: Bar = a => a.toString();
 
 bar(1);
 
