@@ -11,8 +11,10 @@ const foo = async () => {
   return bar;
 };
 
+const baz: {} = {};
+
 await foo();
 
 foo();
 
-globalThis.console.log(a);
+globalThis.console.log(a, baz);

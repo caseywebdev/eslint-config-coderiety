@@ -13,8 +13,10 @@ const foo = async () => {
 
 await foo();
 
+const baz: {} = 'a';
+
 <div />;
 
 foo();
 
-globalThis.console.log(a);
+globalThis.console.log(a, baz);
