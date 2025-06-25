@@ -23,7 +23,7 @@
     "eslint-plugin-react": "7",
     "eslint": "9",
     "prettier-plugin-jsdoc": "1",
-    "prettier": "3",
+    "prettier": "3.5.3",
     "typescript-eslint": "8"
   }
 }
