@@ -39,6 +39,8 @@ export default [
         'error',
         {
           arrowParens: 'avoid',
+          // NOTE: false until https://github.com/hosseinmd/prettier-plugin-jsdoc/pull/252/files#r2485445394 is resolved
+          jsdocFormatImports: false,
           jsxSingleQuote: true,
           objectWrap: 'collapse',
           plugins: ['prettier-plugin-jsdoc'],
